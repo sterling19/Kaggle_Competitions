@@ -41,8 +41,8 @@ def create_submission():
     ru = pd.read_csv(".//preds//ru_preds.csv")
     zh = pd.read_csv(".//preds//zh_preds.csv")
 	
-	sub_df = pd.concat((en, es, de, fr, ja, na, ru, zh), axis=0)
-	sub_df.to_csv(".//subs//sub_17.csv", index=False)
+    sub_df = pd.concat((en, es, de, fr, ja, na, ru, zh), axis=0)
+    sub_df.to_csv(".//subs//sub_17.csv", index=False)
 	
 if __name__ == '__main__':
 
